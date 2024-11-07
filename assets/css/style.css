@@ -47,12 +47,12 @@ body {
   opacity: 0.7;
   border-radius: 20px;
   transition: all 0.3s ease;
-  box-shadow: 5px 5px 12px #e6b51459;
+  box-shadow: 5px 5px 12px #14141459;
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 30px #e6b51459;
+  box-shadow: 0 0 30px #14141459;
 }
 
 .text h1 {
@@ -158,12 +158,17 @@ h4 {
 
 /* responsive for iPhone 12 pro */
 @media only screen and (max-width: 390px) {
-  /* body {
+  body {
     background-size: cover;
-  } */
+  }
 
   .section-center {
     margin-bottom: 18rem;
+  }
+
+  .card {
+    margin-top: 80%;
+    margin-bottom: -120px;
   }
 
   .card h1 {
