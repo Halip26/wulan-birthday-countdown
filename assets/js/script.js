@@ -123,7 +123,9 @@ let index = 0;
 function changeBackground() {
   document.body.style.backgroundImage = images[index];
   index = (index + 1) % images.length;
-  setTimeout(changeBackground, 3000);
+
+  // set delay every 5 seconds
+  setTimeout(changeBackground, 5000);
 }
 
 // Initial call to start the loop
