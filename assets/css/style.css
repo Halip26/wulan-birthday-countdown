@@ -16,7 +16,7 @@ body {
   background-image: url("../images/triwulandarii11_ootd.jpg");
   background-attachment: fixed;
   background-position: center;
-  background-size: fill;
+  background-size: contain;
   background-repeat: repeat;
   background-color: #6fe7fc;
 }
@@ -157,6 +157,9 @@ h4 {
 
 /* responsive for iPhone 12 pro */
 @media only screen and (max-width: 390px) {
+  body {
+    background-size: cover;
+  }
   .section-center {
     margin-bottom: 18rem;
   }
