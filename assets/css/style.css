@@ -14,12 +14,15 @@
 body {
   height: 100%;
   background-image: url("../images/triwulandarii11_ootd.jpg");
-  background-attachment: fixed;
+  background-size: cover;
   background-position: center;
-  background-size: contain;
   background-repeat: repeat;
-  background-color: #6fe7fc;
   transition: background-image 1s ease-in-out;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .section {

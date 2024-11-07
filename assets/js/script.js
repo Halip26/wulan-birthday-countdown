@@ -123,7 +123,8 @@ let index = 0;
 function changeBackground() {
   document.body.style.backgroundImage = images[index];
   index = (index + 1) % images.length;
+  setTimeout(changeBackground, 3000);
 }
 
-// Change background image every 3 seconds
-setInterval(changeBackground, 3000);
+// Initial call to start the loop
+changeBackground();
