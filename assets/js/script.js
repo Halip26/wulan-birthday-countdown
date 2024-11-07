@@ -107,3 +107,23 @@ const currentYear = new Date().getFullYear();
 
 // Set the current year to the span with id "currnetYear"
 document.getElementById("currentYear").textContent = currentYear;
+
+// Array of background images
+const images = [
+  'url("/assets/images/triwulandari11_sunset.jpg")',
+  'url("/assets/images/triwulandarii11_ootd.jpg")',
+  'url("/assets/images/triwulandarii11_ootd2.jpg")',
+  'url("/assets/images/triwulandarii11_casual.jpg")',
+];
+
+// Initial index
+let index = 0;
+
+// Function to change background image
+function changeBackground() {
+  document.body.style.backgroundImage = images[index];
+  index = (index + 1) % images.length;
+}
+
+// Change background image every 3 seconds
+setInterval(changeBackground, 3000);
